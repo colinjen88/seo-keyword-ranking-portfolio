@@ -236,7 +236,7 @@ body {
 .item-image {
     position: relative;
     overflow: hidden;
-    height: 550px; /* Fixed height as requested */
+    height: 464px; /* Fixed height as requested */
     border-radius: 20px 20px 0 0;
 }
 
