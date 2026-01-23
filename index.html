@@ -63,6 +63,35 @@
         <div class="orb orb-3"></div>
     </div>
 
+    <header class="hero">
+        <div class="hero-container">
+            <div class="glass-card hero-card">
+                <h1>SEO關鍵字實績</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats Bar Section -->
+    <section class="stats-section">
+        <div class="stats-container glass-card">
+            <div class="stats-header">
+                <h2 class="stats-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        aria-hidden="true">
+                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                        <polyline points="17 6 23 6 23 12"></polyline>
+                    </svg>
+                    關鍵字排名概覽
+                </h2>
+                <div class="stats-tip">（左右滑動查看更多）</div>
+            </div>
+            <div class="stats-grid" id="stats-grid">
+                <!-- Dynamic Content -->
+            </div>
+        </div>
+    </section>
+
     <!-- About Me Section -->
     <section class="about-section" aria-label="關於我">
         <div class="about-container">
@@ -91,8 +120,12 @@
                         <span class="stat-label">排名第一</span>
                     </div>
                     <div class="about-stat-item">
-                        <span class="stat-number">90%+</span>
-                        <span class="stat-label">前三名達成</span>
+                        <span class="stat-number" id="stat-ai">0</span>
+                        <span class="stat-label">AI摘要</span>
+                    </div>
+                    <div class="about-stat-item">
+                        <span class="stat-number" id="stat-featured">0</span>
+                        <span class="stat-label">精選摘要</span>
                     </div>
                 </div>
                 <div class="about-tags">
@@ -105,33 +138,6 @@
             </div>
         </div>
     </section>
-
-    <header class="hero">
-        <div class="hero-container">
-            <div class="glass-card hero-card">
-                <p class="hero-label">內容行銷 · 搜尋優化</p>
-                <h1>SEO關鍵字實績</h1>
-                <p class="hero-desc">
-                    以下是我近期規劃產出的文章在 Google 搜尋結果中的排名截圖，<br>
-                    多個關鍵字已達到<strong>搜尋結果第一名</strong>。
-                </p>
-            </div>
-            <div class="glass-card hero-stats">
-                <h2 class="stats-title">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        aria-hidden="true">
-                        <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                        <polyline points="17 6 23 6 23 12"></polyline>
-                    </svg>
-                    關鍵字排名概覽
-                </h2>
-                <div class="stats-grid" id="stats-grid">
-                    <!-- Dynamic Content -->
-                </div>
-            </div>
-        </div>
-    </header>
 
     <!-- Gallery Section -->
     <main class="gallery" id="main-content">

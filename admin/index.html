@@ -48,6 +48,11 @@
                 const el = document.createElement('div');
                 el.className = 'card-item';
                 el.setAttribute('data-id', item.id);
+
+                // Determine active state classes
+                const aiActiveClass = item.showAiSummary ? 'tag-active ai' : '';
+                const featActiveClass = item.showFeaturedSummary ? 'tag-active feat' : '';
+
                 el.innerHTML = `
                     <div class="card-img-wrapper">
                         <img src="../${item.image}" class="card-img" loading="lazy">
@@ -59,11 +64,30 @@
                             <span>Rank: #${item.rank}</span>
                             <span>${item.date}</span>
                         </div>
+                        <div class="card-tags">
+                            <button class="tag-btn ${aiActiveClass}" onclick="toggleTag('${item.id}', 'showAiSummary')">
+                                #AI摘要
+                            </button>
+                            <button class="tag-btn ${featActiveClass}" onclick="toggleTag('${item.id}', 'showFeaturedSummary')">
+                                #精選摘要
+                            </button>
+                        </div>
                     </div>
                 `;
                 grid.appendChild(el);
             });
         }
+
+        // Toggle Tag Function
+        window.toggleTag = function (id, property) {
+            const item = items.find(i => i.id === id);
+            if (item) {
+                // Toggle boolean
+                item[property] = !item[property];
+                // Re-render to show update (or just update class for performance, but re-render is safer for sync)
+                render();
+            }
+        };
 
         render();
 

@@ -28,10 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderAboutStats(items) {
     const totalItems = items.length;
     const rank1Items = items.filter(item => item.rank === 1).length;
+    const aiItems = items.filter(item => item.showAiSummary === true).length;
+    const featuredItems = items.filter(item => item.showFeaturedSummary === true).length;
+
     const statTotalEl = document.getElementById('stat-total');
     const statRank1El = document.getElementById('stat-rank1');
+    const statAiEl = document.getElementById('stat-ai');
+    const statFeaturedEl = document.getElementById('stat-featured');
+
     if (statTotalEl) statTotalEl.textContent = totalItems;
     if (statRank1El) statRank1El.textContent = rank1Items;
+    if (statAiEl) statAiEl.textContent = aiItems;
+    if (statFeaturedEl) statFeaturedEl.textContent = featuredItems;
 }
 
 /**
@@ -52,7 +60,18 @@ function renderGrid(items, galleryGrid, statsGrid) {
         galleryEl.className = 'glass-card gallery-item';
         galleryEl.setAttribute('data-src', item.image); // path is now absolute from data/items.js
 
-        // Initial state handled by CSS (.gallery-item)
+        // Tag Logic
+        let tagsHtml = `<span class="rank-tag">#第${item.rank}</span>`;
+
+        if (item.showAiSummary) {
+            tagsHtml += `<span class="rank-tag tag-ai">#AI摘要</span>`;
+        }
+
+        if (item.showFeaturedSummary) {
+            tagsHtml += `<span class="rank-tag tag-featured">#精選摘要</span>`;
+        }
+
+        tagsHtml += `<span class="rank-date">查詢時間：${item.date}</span>`;
 
         galleryEl.innerHTML = `
             <figure class="item-image">
@@ -72,7 +91,7 @@ function renderGrid(items, galleryGrid, statsGrid) {
                 </div>
             </figure>
             <div class="item-content">
-                <h3>${escapeHtml(item.title)} <span class="rank-tag">#第${item.rank}</span> <span class="rank-date">查詢時間：${item.date}</span></h3>
+                <h3>${escapeHtml(item.title)} ${tagsHtml}</h3>
                 <p>${escapeHtml(item.description)}</p>
             </div>
         `;

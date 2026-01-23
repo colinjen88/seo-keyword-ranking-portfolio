@@ -26,7 +26,7 @@ header {
     align-items: center;
     margin-bottom: 30px;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 h1 {
@@ -58,12 +58,12 @@ h1 {
 }
 
 .btn-secondary {
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .grid {
@@ -74,7 +74,7 @@ h1 {
 
 .card-item {
     background: var(--card-bg);
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     overflow: hidden;
     cursor: grab;
@@ -85,7 +85,7 @@ h1 {
 .card-item:active {
     cursor: grabbing;
     transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     z-index: 10;
 }
 
@@ -123,13 +123,55 @@ h1 {
     color: var(--text-secondary);
     display: flex;
     justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+/* Tag Buttons in Admin */
+.card-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tag-btn.tag-active {
+    border-color: transparent;
+    color: #fff;
+}
+
+/* AI Active Style */
+.tag-btn.tag-active.ai {
+    background: rgba(167, 139, 250, 0.3);
+    color: #c4b5fd;
+    border: 1px solid rgba(167, 139, 250, 0.5);
+}
+
+/* Featured Active Style */
+.tag-btn.tag-active.feat {
+    background: rgba(251, 191, 36, 0.3);
+    color: #fcd34d;
+    border: 1px solid rgba(251, 191, 36, 0.5);
 }
 
 .drag-handle {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     padding: 5px;
     border-radius: 4px;
     color: #fff;

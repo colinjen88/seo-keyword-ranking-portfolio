@@ -1,174 +1,173 @@
 ﻿window.portfolioItems = [
     {
         "id": "gold-paper",
-        "title": "蝝?暺?",
+        "title": "紙上黃金",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/蝝?暺?_1ST.jpg",
-        "description": "擃奎?剖漲???摮????颱?擐???,
-        "keywords": ["蝝?暺?"]
+        "image": "assets/images/紙上黃金_1ST.jpg",
+        "description": "高競爭度金融關鍵字，成功攻佔首位。",
+        "keywords": ["紙上黃金"]
     },
     {
         "id": "rate-cut-bonus",
-        "title": "?蝝",
+        "title": "降息紅利",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/?蝝_1ST.jpg",
-        "description": "蝺???閰梢?嚗???????押?,
-        "keywords": ["?蝝"]
+        "image": "assets/images/降息紅利_1ST.jpg",
+        "description": "緊跟時事話題，捕捉即時流量紅利。",
+        "keywords": ["降息紅利"]
     },
     {
         "id": "gold-allocation",
-        "title": "暺??蔭摮?,
+        "title": "黃金配置學",
         "rank": 1,
         "date": "20251225",
-        "image": "assets/images/暺??蔭摮?jpg",
-        "description": "????摰Ｙ黎嚗撠暸??萄??芸???,
-        "keywords": ["暺??蔭摮?]
+        "image": "assets/images/黃金配置學.jpg",
+        "description": "鎖定投資客群，長尾關鍵字優化。",
+        "keywords": ["黃金配置學"]
     },
     {
         "id": "silver-investment",
-        "title": "?賡????餌",
+        "title": "白銀投資攻略",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/?賡????餌_1st.jpg",
-        "description": "蝎暹?????摰Ｙ黎嚗撠暸??萄??芸???,
-        "keywords": ["?賡????餌"]
+        "image": "assets/images/白銀投資攻略_1st.jpg",
+        "description": "精準鎖定投資客群，長尾關鍵字優化。",
+        "keywords": ["白銀投資攻略"]
     },
     {
         "id": "hoard-gold-beans",
-        "title": "?日?鞊?,
+        "title": "囤金豆",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/?日?鞊2ND.jpg",
-        "description": "?啗??瓷閰梢?嚗翰?雿?銝葉甈～?,
-        "keywords": ["?日?鞊?]
+        "image": "assets/images/囤金豆_2ND.jpg",
+        "description": "新興理財話題，快速搶佔前三席次。",
+        "keywords": ["囤金豆"]
     },
     {
         "id": "precious-metal-safety",
-        "title": "鞎湧?撅祈眺鞈????,
+        "title": "貴金屬買賣安全",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/鞎湧?撅祈眺鞈???灶1st.jpg",
-        "description": "撱箇?靽∩遙?摰對???頧???????,
-        "keywords": ["鞎湧?撅祈眺鞈????]
+        "image": "assets/images/貴金屬買賣安全_1st.jpg",
+        "description": "建立信任感內容，提升轉換率與排名。",
+        "keywords": ["貴金屬買賣安全"]
     },
     {
         "id": "financial-precious-metals",
-        "title": "???眼?惇",
+        "title": "金融型貴金屬",
         "rank": 1,
         "date": "20251225",
-        "image": "assets/images/???眼?惇.jpg",
-        "description": "蝯?頞典???蝎暹?撠?擃?潛?嗚?,
-        "keywords": ["???眼?惇"]
+        "image": "assets/images/金融型貴金屬.jpg",
+        "description": "結合趨勢與產品，精準導流高價值用戶。",
+        "keywords": ["金融型貴金屬"]
     },
     {
         "id": "gold-hedge-fiat",
-        "title": "暺?撠?瘜馳",
+        "title": "黃金對沖法幣",
         "rank": 1,
         "date": "20251225",
-        "image": "assets/images/暺?撠?瘜馳.jpg",
-        "description": "????摰Ｙ黎嚗撠暸??萄??芸???,
-        "keywords": ["暺?撠?瘜馳"]
+        "image": "assets/images/黃金對沖法幣.jpg",
+        "description": "鎖定投資客群，長尾關鍵字優化。",
+        "keywords": ["黃金對沖法幣"]
     },
     {
         "id": "rate-cut-buy-gold",
-        "title": "?鞎瑕祕擃???,
+        "title": "降息買實體黃金",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/?鞎瑕祕擃??1st.jpg",
-        "description": "蝯?頞典???蝎暹?撠?擃?潛?嗚?,
-        "keywords": ["?鞎瑕祕擃???]
+        "image": "assets/images/降息買實體黃金_1st.jpg",
+        "description": "結合趨勢與產品，精準導流高價值用戶。",
+        "keywords": ["降息買實體黃金"]
     },
     {
         "id": "us-debt-gold-price",
-        "title": "蝢閬芋????,
+        "title": "美債規模看金價",
         "rank": 1,
         "date": "20251225",
-        "image": "assets/images/蝢閬芋????jpg",
-        "description": "蝯?頞典???蝎暹?撠?擃?潛?嗚?,
-        "keywords": ["蝢閬芋????]
+        "image": "assets/images/美債規模看金價.jpg",
+        "description": "結合趨勢與產品，精準導流高價值用戶。",
+        "keywords": ["美債規模看金價"]
     },
     {
         "id": "gold-recycling-intro",
-        "title": "暺???仿?",
+        "title": "黃金回收入門",
         "rank": 1,
         "date": "20251219",
-        "image": "assets/images/暺???仿?_1ST.jpg",
-        "description": "閫?捱?唳???嚗???憡批?????,
-        "keywords": ["暺???仿?"]
+        "image": "assets/images/黃金回收入門_1ST.jpg",
+        "description": "解決新手痛點，打造權威性入門指南。",
+        "keywords": ["黃金回收入門"]
     },
     {
         "id": "small-gold-bean",
-        "title": "撠?鞊?鞎?,
+        "title": "小金豆理財",
         "rank": 1,
         "date": "20260105",
-        "image": "assets/images/撠?鞊?鞎?jpg",
-        "description": "?唳??仿???",
-        "keywords": ["撠?鞊?鞎?]
+        "image": "assets/images/小金豆理財.jpg",
+        "description": "新手入門指南",
+        "keywords": ["小金豆理財"]
     },
     {
         "id": "solid-state-nano-gold",
-        "title": "?箸?憟掖??,
+        "title": "固態奈米金",
         "rank": 1,
         "date": "20260123",
-        "image": "assets/images/?箸?憟掖?1st_ai??.jpg",
-        "description": "擃?????摮?蝎暹??????,
-        "keywords": ["?箸?憟掖??]
+        "image": "assets/images/固態奈米金_1st_ai摘要.jpg",
+        "description": "高科技領域關鍵字，精準鎖定受眾。",
+        "keywords": ["固態奈米金"]
     },
     {
         "id": "precious-metal-optics",
-        "title": "鞎湧?撅砍?摮?,
+        "title": "貴金屬光學",
         "rank": 3,
         "date": "20260123",
-        "image": "assets/images/鞎湧?撅砍?摮筷3rd_ai??.jpg",
-        "description": "撠平?銵??萄?嚗遣蝡?憡耦鞊～?,
-        "keywords": ["鞎湧?撅砍?摮?]
+        "image": "assets/images/貴金屬光學_3rd_ai摘要.jpg",
+        "description": "專業技術關鍵字，建立權威形象。",
+        "keywords": ["貴金屬光學"]
     },
     {
         "id": "gold-silver-alloy",
-        "title": "????憿?",
+        "title": "金銀合金顆粒",
         "rank": 2,
         "date": "20260123",
-        "image": "assets/images/????憿?_2nd.jpg",
-        "description": "??蝘飛??嚗?撠暹?撠?,
-        "keywords": ["????憿?"]
+        "image": "assets/images/金銀合金顆粒_2nd.jpg",
+        "description": "材料科學領域，優化長尾搜尋。",
+        "keywords": ["金銀合金顆粒"]
     },
     {
         "id": "colloidal-gold",
-        "title": "????,
+        "title": "膠態金",
         "rank": 1,
         "date": "20260123",
-        "image": "assets/images/????jpg",
-        "description": "?孵?鋆賜??摮??颱??拙撣??,
-        "keywords": ["????]
+        "image": "assets/images/膠態金.jpg",
+        "description": "特定製程關鍵字，攻佔利基市場。",
+        "keywords": ["膠態金"]
     },
     {
         "id": "gold-vs-nanogold",
-        "title": "暺?vs憟掖??,
+        "title": "黃金vs奈米金",
         "rank": 1,
         "date": "20260123",
-        "image": "assets/images/暺?vs憟掖?1st_ai??.jpg",
-        "description": "瘥??摰對?蝎暹????????,
-        "keywords": ["暺?vs憟掖??]
+        "image": "assets/images/黃金vs奈米金_1st_ai摘要.jpg",
+        "description": "比較型內容，精準攔截搜尋意圖。",
+        "keywords": ["黃金vs奈米金"]
     },
     {
         "id": "stock-gold-rise",
-        "title": "?⊿??撞",
+        "title": "股金雙漲",
         "rank": 2,
         "date": "20260123",
-        "image": "assets/images/?⊿??撞_2nd.jpg",
-        "description": "?鞎∠?頞典嚗????撠???,
-        "keywords": ["?⊿??撞"]
+        "image": "assets/images/股金雙漲_2nd.jpg",
+        "description": "掌握財經趨勢，即時引爆搜尋流量。",
+        "keywords": ["股金雙漲"]
     },
     {
         "id": "gold-silver-ratio-mean-reversion",
-        "title": "??瘥??澆?甇?,
+        "title": "金銀比均值回歸",
         "rank": 1,
         "date": "20260123",
-        "image": "assets/images/??瘥??澆?甇筷1st_ai??.jpg",
-        "description": "撠平?銵???璅????脤???鈭箸?撠?,
-        "keywords": ["??瘥??澆?甇?]
+        "image": "assets/images/金銀比均值回歸_1st_ai摘要.jpg",
+        "description": "專業技術分析指標，鎖定進階投資人搜尋。",
+        "keywords": ["金銀比均值回歸"]
     }
 ];
-
