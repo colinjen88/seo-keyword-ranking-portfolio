@@ -15,17 +15,11 @@
     "deploy": {
         "files": [
             "index.html",
-            "style.css",
-            "小金豆理財.jpg",
-            "小金豆回報率.jpg",
-            "囤金豆_2ND.jpg",
-            "白銀投資攻略_1st.jpg",
-            "紙上黃金_1ST.jpg",
-            "貴金屬買賣安全_1st.jpg",
-            "降息紅利_1ST.jpg",
-            "降息買實體黃金_1st.jpg",
-            "黃金回收入門_1ST.jpg",
-            "data"
+            "server.js",
+            "package.json",
+            "assets",
+            "data",
+            "admin"
         ],
         "description": "Deploy static HTML site"
     },
