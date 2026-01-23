@@ -217,5 +217,38 @@ window.portfolioItems = [
             "金銀比均值回歸"
         ],
         "showAiSummary": true
+    },
+    {
+        "id": "gold-mining-stocks-roi",
+        "title": "金礦股的投報率",
+        "rank": 2,
+        "date": "20260111",
+        "image": "assets/images/金礦股的投報率.jpg",
+        "description": "關注金礦股表現，掌握投資先機。",
+        "keywords": [
+            "金礦股的投報率"
+        ]
+    },
+    {
+        "id": "which-gold-high-roi",
+        "title": "買哪一種黃金投報率高",
+        "rank": 1,
+        "date": "20260111",
+        "image": "assets/images/買哪一種黃金投報率高.jpg",
+        "description": "比較各類黃金商品，找出最佳投報率。",
+        "keywords": [
+            "買哪一種黃金投報率高"
+        ]
+    },
+    {
+        "id": "where-to-buy-gold",
+        "title": "黃金漲去哪買划算",
+        "rank": 1,
+        "date": "20260111",
+        "image": "assets/images/黃金漲去哪買划算.jpg",
+        "description": "精選購買通路，掌握最佳入手時機。",
+        "keywords": [
+            "黃金漲去哪買划算"
+        ]
     }
 ];
