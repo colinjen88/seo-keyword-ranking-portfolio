@@ -400,11 +400,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    overflow-x: auto;
-    padding-bottom: 4px;
-    /* for scrollbar */
-    scrollbar-width: thin;
-    scrollbar-color: var(--glass-border) transparent;
+    justify-content: flex-start;
+    /* Ensure items start from the left */
+    /* Remove horizontal scroll behaviors */
+    overflow-x: visible;
+    padding-bottom: 0;
+    max-width: 100%;
+    /* Ensure it does not overflow parent */
 }
 
 .stat-item {
@@ -825,13 +827,22 @@ body {
         border-right: none;
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         padding-bottom: 12px;
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .stats-title {
+        border-right: none;
+        padding-right: 0;
     }
 
     .stats-grid {
         width: 100%;
+        margin-top: 8px;
+        /* Add spacing between header and grid */
     }
 
     .hero h1 {
