@@ -1,5 +1,84 @@
 window.portfolioItems = [
     {
+        "id": "gold-token",
+        "title": "黃金代幣",
+        "rank": 2,
+        "date": "20260210",
+        "image": "assets/images/GoldToken_2nd.jpg",
+        "description": "區塊鏈投資新選擇，掌握數位資產趨勢。",
+        "keywords": [
+            "黃金代幣"
+        ]
+    },
+    {
+        "id": "gold-token-trading",
+        "title": "黃金代幣交易",
+        "rank": 4,
+        "date": "20260210",
+        "image": "assets/images/黃金代幣交易_4st.jpg",
+        "description": "連結實體與虛擬，數位黃金交易指南。",
+        "keywords": [
+            "黃金代幣交易"
+        ]
+    },
+    {
+        "id": "gold-liquidity",
+        "title": "黃金變活水",
+        "rank": 1,
+        "date": "20260210",
+        "image": "assets/images/黃金變活水_1st_摘要.jpg",
+        "description": "活化閒置資產，創造被動收入。",
+        "keywords": [
+            "黃金變活水"
+        ],
+        "showAiSummary": true
+    },
+    {
+        "id": "token-to-bar",
+        "title": "代幣換成金條",
+        "rank": 1,
+        "date": "20260210",
+        "image": "assets/images/代幣換成金條_1st_摘要.jpg",
+        "description": "虛實整合兌換機制，完整操作流程解析。",
+        "keywords": [
+            "代幣換成金條"
+        ],
+        "showAiSummary": true
+    },
+    {
+        "id": "how-to-buy-tokens",
+        "title": "怎麼買黃金代幣",
+        "rank": 2,
+        "date": "20260210",
+        "image": "assets/images/怎麼買黃金代幣_2nd.jpg",
+        "description": "新手入門必看，安全購買與存儲教學。",
+        "keywords": [
+            "怎麼買黃金代幣"
+        ]
+    },
+    {
+        "id": "gold-tax-2026",
+        "title": "2026黃金稅務懶人包",
+        "rank": 1,
+        "date": "20260210",
+        "image": "assets/images/2026黃金稅務懶人包_1st.jpg",
+        "description": "最新稅務法規整理，投資報稅不踩雷。",
+        "keywords": [
+            "2026黃金稅務懶人包"
+        ]
+    },
+    {
+        "id": "rwa-real-gold",
+        "title": "RWA實物黃金",
+        "rank": 2,
+        "date": "20260210",
+        "image": "assets/images/RWA實物黃金_2nd.jpg",
+        "description": "現實資產代幣化，探索黃金投資新浪潮。",
+        "keywords": [
+            "RWA實物黃金"
+        ]
+    },
+    {
         "id": "gold-paper",
         "title": "紙上黃金",
         "rank": 1,
