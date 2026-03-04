@@ -350,6 +350,74 @@ body {
 }
 
 /* ===================================
+   Search Panel
+   =================================== */
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+}
+
+.search-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.search-toggle:hover {
+    color: var(--accent);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.search-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.19, 1, 0.22, 1), margin-top 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
+    margin-top: 0;
+    opacity: 0;
+}
+
+.search-container.active {
+    max-height: 60px;
+    margin-top: 16px;
+    opacity: 1;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.search-container input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 15px var(--accent-glow);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.search-container input::placeholder {
+    color: var(--text-muted);
+}
+
+/* ===================================
    Stats Bar Section
    =================================== */
 .stats-section {
