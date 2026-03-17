@@ -25,7 +25,7 @@
     --font-sans: 'Inter', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
 
     /* Spacing */
-    --section-padding: clamp(60px, 10vw, 120px);
+    --section-padding: clamp(32px, 5vw, 48px);
     --card-padding: clamp(20px, 4vw, 32px);
 }
 
@@ -162,7 +162,7 @@ body {
    About Me Section
    =================================== */
 .about-section {
-    padding: 60px 24px 40px;
+    padding: 20px 24px;
     display: flex;
     justify-content: center;
 }
@@ -304,7 +304,7 @@ body {
    Stats Bar Section
    =================================== */
 .stats-section {
-    padding: 0 24px 40px;
+    padding: 0 24px 24px;
     display: flex;
     justify-content: center;
 }
@@ -312,11 +312,11 @@ body {
 .stats-container {
     max-width: 1400px;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px 20px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px 20px;
+    gap: 8px 16px;
     overflow-x: hidden;
 }
 
@@ -338,10 +338,10 @@ body {
 .stat-item {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 0.85rem;
+    gap: 6px;
+    font-size: 0.8rem;
     color: var(--text-secondary);
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 6px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid transparent;
@@ -361,13 +361,37 @@ body {
    Hero Section
    =================================== */
 .hero {
-    padding: 60px 24px 40px;
+    padding: 40px 24px 20px;
     display: flex;
     justify-content: center;
 }
 
-.hero-container {
+.hero-layout-container {
     max-width: 1400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+@media (min-width: 1025px) {
+    .hero-layout-container {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .hero-container {
+        flex: 1;
+        max-width: 450px;
+    }
+    
+    .benefits-section {
+        flex: 2;
+        padding: 0; /* Remove internal section padding when in header */
+    }
+}
+
+.hero-container {
     width: 100%;
 }
 
@@ -593,9 +617,10 @@ body {
 }
 
 .rank-date {
-    font-size: 12px;
-    color: #485057;
-    margin-left: 8px;
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin: 4px 0 8px;
     font-weight: normal;
 }
 
@@ -855,96 +880,4 @@ body {
         animation: none;
     }
 }
-/* Benefits Section */
-.benefits-section {
-    padding: 24px 24px 400px;
-    display: flex;
-    justify-content: center;
-}
-.benefits-container {
-    max-width: 1400px;
-    width: 100%;
-}
-.benefits-card {
-    padding: 40px;
-    text-align: center;
-}
-.benefits-title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    margin-bottom: 32px;
-    background: linear-gradient(135deg, #fff 0%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.4;
-}
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-}
-.benefit-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 30px 24px;
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 20px;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.benefit-item:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.06);
-    border-color: var(--accent);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-}
-.benefit-icon {
-    font-size: 2.8rem;
-    filter: drop-shadow(0 0 10px var(--accent-glow));
-}
-.benefit-text h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--accent);
-}
-.benefit-text p {
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    line-height: 1.62;
-}
-@media (max-width: 768px) {
-    .benefits-section {
-        padding: 16px 16px 32px;
-    }
-    .benefits-card {
-        padding: 32px 20px;
-    }
-    .benefits-title {
-        font-size: 1.35rem;
-        margin-bottom: 24px;
-    }
-    .benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-    .benefit-item {
-        padding: 24px;
-        flex-direction: row;
-        text-align: left;
-        gap: 20px;
-    }
-    .benefit-icon {
-        font-size: 2.2rem;
-        flex-shrink: 0;
-    }
-    .benefit-text h3 {
-        font-size: 1.15rem;
-        margin-bottom: 6px;
-    }
-    .benefit-text p {
-        font-size: 0.9rem;
-    }
-}
+

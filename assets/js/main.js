@@ -48,6 +48,10 @@ function renderAboutStats(items) {
 function renderGrid(items, galleryGrid, statsGrid) {
     if (!galleryGrid || !statsGrid) return;
 
+    // Clear existing content to avoid duplicates and ensure freshness
+    galleryGrid.innerHTML = '';
+    statsGrid.innerHTML = '';
+
     items.forEach((item) => {
         // Render Sidebar Stat Item
         const statEl = document.createElement('div');
@@ -58,25 +62,23 @@ function renderGrid(items, galleryGrid, statsGrid) {
         // Render Gallery Card
         const galleryEl = document.createElement('article');
         galleryEl.className = 'glass-card gallery-item';
-        galleryEl.setAttribute('data-src', item.image); // path is now absolute from data/items.js
+        galleryEl.setAttribute('data-src', item.image);
 
-        // Tag Logic
+        // Rank and summary tags
         let tagsHtml = `<span class="rank-tag">#第${item.rank}</span>`;
-
-        if (item.showAiSummary) {
-            tagsHtml += `<span class="rank-tag tag-ai">#AI摘要</span>`;
+        if (item.showAiSummary) tagsHtml += ` <span class="rank-tag tag-ai">#AI摘要</span>`;
+        if (item.showFeaturedSummary) tagsHtml += ` <span class="rank-tag tag-featured">#精選摘要</span>`;
+        
+        // Date formatting: YYYYMMDD -> YYYY.MM.DD 更新
+        let displayDate = item.date;
+        if (displayDate && displayDate.length === 8) {
+            displayDate = `${displayDate.substring(0, 4)}.${displayDate.substring(4, 6)}.${displayDate.substring(6, 8)} 更新`;
         }
-
-        if (item.showFeaturedSummary) {
-            tagsHtml += `<span class="rank-tag tag-featured">#精選摘要</span>`;
-        }
-
-        tagsHtml += `<span class="rank-date">查詢時間：${item.date}</span>`;
+        const dateHtml = `<span class="rank-date">${displayDate}</span>`;
 
         galleryEl.innerHTML = `
             <figure class="item-image">
-                <img src="${item.image}" alt="${escapeHtml(item.title)} - Google 搜尋排名第${item.rank}" loading="lazy" width="800" height="500">
-                <figcaption class="item-caption">${escapeHtml(item.title)}搜尋排名截圖</figcaption>
+                <img src="${item.image}" alt="${escapeHtml(item.title)} - Google 搜尋排名第${item.rank}" loading="lazy">
                 <div class="item-rank">#${item.rank}</div>
                 <div class="item-overlay">
                     <span class="zoom-icon" aria-hidden="true">
@@ -84,14 +86,13 @@ function renderGrid(items, galleryGrid, statsGrid) {
                             stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="11" cy="11" r="8"></circle>
                             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
                         </svg>
                     </span>
                 </div>
             </figure>
             <div class="item-content">
                 <h3>${escapeHtml(item.title)} ${tagsHtml}</h3>
+                ${dateHtml}
                 <p>${escapeHtml(item.description)}</p>
             </div>
         `;
