@@ -329,5 +329,111 @@ window.portfolioItems = [
         "keywords": [
             "黃金漲去哪買划算"
         ]
-    }
+    },
+    {
+            "id": "physical-silver-ecology",
+            "title": "實體白銀生態",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/實體白銀生態_1st_摘要.jpg",
+            "description": "解析實體白銀的市場生態與應用價值。",
+            "keywords": [
+                "實體白銀生態"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "silver-anti-bacteria",
+            "title": "白銀對抗細菌",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀對抗細菌_1st_摘要.jpg",
+            "description": "探討白銀在抗菌領域的卓越表現。",
+            "keywords": [
+                "白銀對抗細菌"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "silver-anti-superbugs",
+            "title": "白銀對抗超級細菌",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀對抗超級細菌_1st.jpg",
+            "description": "白銀技術如何應對現代醫學的超級細菌挑戰。",
+            "keywords": [
+                "白銀對抗超級細菌"
+            ]
+        },
+        {
+            "id": "silver-antibacterial-history",
+            "title": "白銀抗菌史",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀抗菌史_1st_摘要.jpg",
+            "description": "回顧人類使用白銀抗菌的歷史與發展。",
+            "keywords": [
+                "白銀抗菌史"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "silver-medical",
+            "title": "白銀醫療",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀醫療_1st.jpg",
+            "description": "白銀在現代醫療器械與治療中的應用。",
+            "keywords": [
+                "白銀醫療"
+            ]
+        },
+        {
+            "id": "silver-medical-value",
+            "title": "白銀醫療價值",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀醫療價值_1st_摘要.jpg",
+            "description": "深度解析白銀醫療應用的投資與市場價值。",
+            "keywords": [
+                "白銀醫療價值"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "silver-medical-applications",
+            "title": "白銀醫療應用",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/白銀醫療應用_1st_摘要.jpg",
+            "description": "白銀材料在各類醫療場景的創新應用。",
+            "keywords": [
+                "白銀醫療應用"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "precious-metals-investment-guide",
+            "title": "貴金屬投資攻略",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/貴金屬投資攻略_1st_摘要.jpg",
+            "description": "全方位的貴金屬市場投資教學。",
+            "keywords": [
+                "貴金屬投資攻略"
+            ],
+            "showAiSummary": true
+        },
+        {
+            "id": "precious-metals-guide",
+            "title": "貴金屬攻略",
+            "rank": 1,
+            "date": "20260317",
+            "image": "assets/images/貴金屬攻略_1st_摘要.jpg",
+            "description": "掌握貴金屬趨勢，穩健佈局資產。",
+            "keywords": [
+                "貴金屬攻略"
+            ],
+            "showAiSummary": true
+        }
 ];
