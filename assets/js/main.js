@@ -106,24 +106,30 @@ function updateJsonLd(items) {
     const jsonLdBlock = document.getElementById('json-ld-items');
     if (jsonLdBlock) {
         try {
-            // Check if content already exists, handle potential parsing errors
-            const currentContent = jsonLdBlock.textContent.trim();
-            const ldData = currentContent ? JSON.parse(currentContent) : {
+            const ldData = {
                 "@context": "https://schema.org",
                 "@type": "ItemList",
-                "itemListElement": []
+                "name": "SEO 搜尋排名成果案例",
+                "description": "展示近期內容行銷在 Google 搜尋結果與 AI 摘要中的實績表現",
+                "numberOfItems": items.length,
+                "itemListOrder": "https://schema.org/ItemListOrderDescending",
+                "itemListElement": items.map((item, index) => ({
+                    "@type": "ListItem",
+                    "position": index + 1,
+                    "item": {
+                        "@type": "CreativeWork",
+                        "name": item.title,
+                        "headline": `${item.title} - Google 搜尋排名第 ${item.rank}`,
+                        "description": item.description,
+                        "datePublished": item.date.substring(0, 4) + '-' + item.date.substring(4, 6) + '-' + item.date.substring(6, 8),
+                        "image": window.location.origin + '/' + item.image,
+                        "author": {
+                            "@type": "Person",
+                            "name": "SEO Content Specialist"
+                        }
+                    }
+                }))
             };
-
-            ldData.itemListElement = items.map((item, index) => ({
-                "@type": "ListItem",
-                "position": index + 1,
-                "item": {
-                    "@type": "CreativeWork",
-                    "name": item.title,
-                    "headline": `${item.title} - Google 排名第${item.rank}`,
-                    "image": item.image
-                }
-            }));
             jsonLdBlock.textContent = JSON.stringify(ldData, null, 2);
         } catch (e) {
             console.error('JSON-LD Update Failed', e);

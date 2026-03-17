@@ -300,7 +300,116 @@ body {
     background: rgba(148, 163, 184, 0.1);
 }
 
+/* ===================================
+   Stats Bar Section
+   =================================== */
+.stats-section {
+    padding: 0 24px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.stats-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 20px;
+    overflow-x: hidden;
+}
+
+.stats-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 20px;
+    border-right: 1px solid var(--glass-border);
+    margin-right: 10px;
+}
+
+.stats-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    padding: 4px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.about-tags {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    grid-column: 2;
+}
+
+
+/* ===================================
+   Hero Section
+   =================================== */
+.hero {
+    padding: 60px 24px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-container {
+    max-width: 1400px;
+    width: 100%;
+}
+
+.hero-card {
+    padding: 40px;
+    text-align: center;
+}
+
+.title-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.search-container {
+    margin-top: 32px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#keyword-search-input {
+    width: 100%;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border: 1px solid var(--glass-border);
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#keyword-search-input:focus {
+    border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
 .hero-label {
+
     display: none;
     /* Hide label in compact header */
 }
